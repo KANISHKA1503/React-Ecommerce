@@ -1,4 +1,3 @@
-import { Name } from "selenium-webdriver/lib/command"
 import ProductCard from "./ProductCard"
 import { useState, useEffect } from "react"
 const ProductList = () => {
