@@ -43,7 +43,7 @@ const handleIdChange = (e) => {
         category:category
        }
        
-       await axios.post('http://localhost:3000/products',newProduct)
+       await axios.post('https://react-backend-ecom-alax.onrender.com/products',newProduct)
         toast.success("Product added successfully!");
 navigate("/products");
 

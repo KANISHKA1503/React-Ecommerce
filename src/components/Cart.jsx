@@ -11,7 +11,7 @@ const Cart = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("http://localhost:3000/cart", {
+      const response = await fetch("https://react-backend-ecom-alax.onrender.com/cart", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -35,7 +35,7 @@ const Cart = () => {
   const handleCheckout = async () => {
     try {
       await axios.post(
-        "http://localhost:3000/orders/checkout",
+        "https://react-backend-ecom-alax.onrender.com/orders/checkout",
         {},
         {
           headers: {

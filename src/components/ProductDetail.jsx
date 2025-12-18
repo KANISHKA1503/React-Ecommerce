@@ -7,7 +7,7 @@ const ProductDetails=()=>{
     const[response,setResponse]=useState([])
     useEffect(() => {
   async function fetchProduct() {
-      const res = await axios.get(`http://localhost:3000/products/${id}`);
+      const res = await axios.get(`https://react-backend-ecom-alax.onrender.com/products/${id}`);
       setResponse(res.data); 
   }
 
@@ -26,7 +26,7 @@ const ProductDetails=()=>{
              category:response.category,
              quantity:1
          }
-             fetch('http://localhost:3000/cart',
+             fetch('https://react-backend-ecom-alax.onrender.com/cart',
              {method:'POST',
                  headers:{'Content-Type':'application/json;charset=UTF-8',},
                  body:JSON.stringify(newProduct),})

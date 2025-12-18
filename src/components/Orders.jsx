@@ -11,7 +11,7 @@ const Orders = () => {
     const fetchOrders = async () => {
       try {
         console.log("Token:", token); // Debug: check if token exists
-        const response = await axios.get("http://localhost:3000/orders", {
+        const response = await axios.get("https://react-backend-ecom-alax.onrender.com/orders", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

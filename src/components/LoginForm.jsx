@@ -20,7 +20,7 @@ const LoginForm=()=>
     {
         e.preventDefault()
        console.log(userName,passwordRef.current.value)
-     const {data}=await axios.post("http://localhost:3000/auth/login",
+     const {data}=await axios.post("https://react-backend-ecom-alax.onrender.com/auth/login",
        {
         email:email,
         password:passwordRef.current.value

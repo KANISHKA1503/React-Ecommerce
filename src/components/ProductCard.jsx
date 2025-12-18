@@ -14,7 +14,7 @@ const ProductCard=(props)=>
         category:category,
         quantity:1
     }
-        fetch('http://localhost:3000/cart',
+        fetch('https://react-backend-ecom-alax.onrender.com/cart',
         {method:'POST',
             headers:{'Content-Type':'application/json;charset=UTF-8',},
             body:JSON.stringify(newProduct),})
